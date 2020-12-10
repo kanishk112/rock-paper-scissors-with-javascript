@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" href="pageStyle.css">
+</head>
+<body>
+  <header>
+    <div class="container allWrap ">
+        <h1 style="color: black;">Let's Play: Rock-Paper-Scissors Game</h1>
+      <div class="Border">
+        <!-- Buttons section -->
+        <div class="Buttons">
+          <button id="r" type="button" onclick="myFunction()" class="MoveButtons">Rock</button>
+          <button id="p" type="button" onclick="myunction()" class="MoveButtons">Paper</button>
+          <button id="s" type="button" onclick="mynction()" class="MoveButtons">Scissors</button>
+        </div>
+        <!-- human moves section -->
+        <div class="HumanMove">
+          <h2>Human</h2>
+          <div id="hi" class="DispMove">
+            <img  src="images/BLANK.png" alt="Blank">
+          </div>
+        </div>
+        <!-- computer moves section -->
+        <div class="ComputerMove">
+          <h2>Computer</h2>
+           <div id="ci" class="DispMove">
+            <img  src="images/BLANK.png" alt="Blank">
+           </div>
+        </div>
+        <!-- scoreboard section -->
+       <form class="Scores" action="index.html" method="post">
+         <div class="human">
+           <label for="human">HUMAN:</label>
+           <input  id="user-score" style="width: 25%;" type="text" class="form-control" name="human" value="0">
+         </div>
+         <div class="comp">
+           <label for="comp">COMPUTER:</label>
+           <input id="comp-score" style="width: 25%;" type="text" class="form-control" name="comp" value="0">
+         </div>
+         <div class="drw">
+           <label for="draw">DRAWS:</label>
+           <input  id="draw-score" style="width: 25%;" type="text" class="form-control" name="draw" value="0">
+         </div>
+       </form>
+       <!-- result section -->
+        <div id="result" class="Result">
+          <p>Make your move, Human</p>
+        </div>
+       <!-- restart new game  -->
+        <button type="button" onclick="refresh()" class="NewMove">New Move</button>
+
+      </div>
+
+    </div>
+  </header>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
